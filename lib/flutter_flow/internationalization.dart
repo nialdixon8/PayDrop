@@ -107,71 +107,14 @@ Locale createLocale(String language) => language.contains('_')
     : Locale(language);
 
 final kTranslationsMap = <Map<String, Map<String, String>>>[
-  // requestFunds
-  {
-    'wv1862li': {
-      'en': 'Send request',
-      'ar': 'طلب التمويل',
-      'de': 'Geld anfordern',
-      'es': 'Pedír fondos',
-    },
-    'xvj3fan8': {
-      'en': 'Amount',
-      'ar': 'المبلغ بالدولار',
-      'de': '\$ Betrag',
-      'es': '\$ Monto',
-    },
-    '9f4god2g': {
-      'en': 'XRP',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    'wwjahvpl': {
-      'en': 'XRP',
-      'ar': 'ميزانية المكتب',
-      'de': 'Bürobudget',
-      'es': 'Presupuesto de oficina',
-    },
-    'sx0vvzxd': {
-      'en': '\$ USD',
-      'ar': 'التحويل الخارجي',
-      'de': 'Externe Übertragung',
-      'es': 'Transferencia externa',
-    },
-    'ai453kej': {
-      'en': '€ EUR',
-      'ar': 'دفع ACH',
-      'de': 'ACH-Zahlung',
-      'es': 'Pago CCA',
-    },
-    'wo9cebk7': {
-      'en': 'Choose receival currency',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    'rcevwwju': {
-      'en': 'What is this for?',
-      'ar': 'سبب',
-      'de': 'Grund',
-      'es': 'Razón',
-    },
-    '59p3a5b3': {
-      'en': 'Share',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    'xk0bwox3': {
-      'en': 'Home',
-      'ar': 'مسكن',
-      'de': 'Heim',
-      'es': 'Casa',
-    },
-  },
   // homePage_alt_1Copy
   {
+    'a1bttxhg': {
+      'en': '\$',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
     'h8086aeq': {
       'en': 'Food',
       'ar': 'احصل على مكافآت بعيدة',
@@ -244,8 +187,32 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': '\$50,00',
       'es': '\$50.00',
     },
-    'a1bttxhg': {
-      'en': '\$',
+    '520308ek': {
+      'en': 'Want to create a group list?',
+      'ar': 'احصل على مكافآت بعيدة',
+      'de': 'Go-Far-Prämien',
+      'es': 'Recompensas Ve Lejos',
+    },
+    'sx3wxk7m': {
+      'en': 'Share holiday expenses, the easy way.',
+      'ar': 'دخل',
+      'de': 'Einkommen',
+      'es': 'Ingreso',
+    },
+    '3pnsvfhn': {
+      'en': 'Need to split a bill?',
+      'ar': 'احصل على مكافآت بعيدة',
+      'de': 'Go-Far-Prämien',
+      'es': 'Recompensas Ve Lejos',
+    },
+    '36rm58mi': {
+      'en': 'Split the bill equally.',
+      'ar': 'دخل',
+      'de': 'Einkommen',
+      'es': 'Ingreso',
+    },
+    'mkceob4j': {
+      'en': 'Pay',
       'ar': '',
       'de': '',
       'es': '',
@@ -257,6 +224,21 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Casa',
     },
   },
+  // test
+  {
+    'y6ctsbnk': {
+      'en': 'Page Title',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'iane9lr7': {
+      'en': 'Home',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
   // paymentrequest
   {
     '5ozrwvgc': {
@@ -265,14 +247,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': 'Geld anfordern',
       'es': 'Pedír fondos',
     },
-    'uk4mpapc': {
+    'r0qn2k6d': {
       'en': 'Amount',
-      'ar': 'المبلغ بالدولار',
-      'de': '\$ Betrag',
-      'es': '\$ Monto',
+      'ar': 'سبب',
+      'de': 'Grund',
+      'es': 'Razón',
     },
     '9bnf42c4': {
-      'en': 'XRP',
+      'en': '',
       'ar': '',
       'de': '',
       'es': '',
@@ -296,12 +278,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Pago CCA',
     },
     'cycyposm': {
-      'en': 'Choose receival currency',
+      'en': 'What currency do you want to receive?',
       'ar': '',
       'de': '',
       'es': '',
     },
-    'r0qn2k6d': {
+    't6kyspv1': {
       'en': 'What is this for?',
       'ar': 'سبب',
       'de': 'Grund',

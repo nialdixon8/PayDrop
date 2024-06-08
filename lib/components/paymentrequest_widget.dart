@@ -53,16 +53,6 @@ class _PaymentrequestWidgetState extends State<PaymentrequestWidget> {
       height: 600.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
-          BoxShadow(
-            blurRadius: 5.0,
-            color: Color(0x3B1D2429),
-            offset: Offset(
-              0.0,
-              -3.0,
-            ),
-          )
-        ],
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
@@ -116,6 +106,8 @@ class _PaymentrequestWidgetState extends State<PaymentrequestWidget> {
                             borderColor: Colors.transparent,
                             borderRadius: 30.0,
                             buttonSize: 48.0,
+                            fillColor:
+                                FlutterFlowTheme.of(context).primaryBackground,
                             icon: Icon(
                               Icons.close_rounded,
                               color: FlutterFlowTheme.of(context).secondaryText,
@@ -137,64 +129,63 @@ class _PaymentrequestWidgetState extends State<PaymentrequestWidget> {
                         obscureText: false,
                         decoration: InputDecoration(
                           labelStyle: FlutterFlowTheme.of(context)
-                              .displaySmall
+                              .bodyMedium
                               .override(
-                                fontFamily: 'Sora',
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
-                                letterSpacing: 0.0,
-                                fontWeight: FontWeight.w300,
-                              ),
-                          hintText: FFLocalizations.of(context).getText(
-                            'uk4mpapc' /* Amount */,
-                          ),
-                          hintStyle: FlutterFlowTheme.of(context)
-                              .displaySmall
-                              .override(
-                                fontFamily: 'Sora',
+                                fontFamily: 'Inter',
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
-                                fontWeight: FontWeight.w300,
                               ),
-                          enabledBorder: UnderlineInputBorder(
+                          hintText: FFLocalizations.of(context).getText(
+                            'r0qn2k6d' /* Amount */,
+                          ),
+                          hintStyle: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                fontFamily: 'Inter',
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 30.0,
+                                letterSpacing: 0.0,
+                              ),
+                          enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: FlutterFlowTheme.of(context).alternate,
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
-                          focusedBorder: UnderlineInputBorder(
+                          focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0x00000000),
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
-                          errorBorder: UnderlineInputBorder(
+                          errorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0x00000000),
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
-                          focusedErrorBorder: UnderlineInputBorder(
+                          focusedErrorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0x00000000),
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           contentPadding: EdgeInsetsDirectional.fromSTEB(
-                              20.0, 24.0, 24.0, 24.0),
+                              20.0, 32.0, 24.0, 0.0),
                         ),
-                        style:
-                            FlutterFlowTheme.of(context).displaySmall.override(
-                                  fontFamily: 'Sora',
-                                  letterSpacing: 0.0,
-                                ),
-                        textAlign: TextAlign.center,
-                        keyboardType: const TextInputType.numberWithOptions(
-                            decimal: true),
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Inter',
+                              letterSpacing: 0.0,
+                            ),
+                        textAlign: TextAlign.start,
+                        maxLines: 4,
                         validator: _model.textController1Validator
                             .asValidator(context),
                       ),
@@ -204,12 +195,7 @@ class _PaymentrequestWidgetState extends State<PaymentrequestWidget> {
                           EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                       child: FlutterFlowDropDown<String>(
                         controller: _model.dropDownValueController ??=
-                            FormFieldController<String>(
-                          _model.dropDownValue ??=
-                              FFLocalizations.of(context).getText(
-                            '9bnf42c4' /* XRP */,
-                          ),
-                        ),
+                            FormFieldController<String>(null),
                         options: [
                           FFLocalizations.of(context).getText(
                             'zyex3m77' /* XRP */,
@@ -219,8 +205,7 @@ class _PaymentrequestWidgetState extends State<PaymentrequestWidget> {
                           ),
                           FFLocalizations.of(context).getText(
                             'k729hksu' /* € EUR */,
-                          ),
-                          ''
+                          )
                         ],
                         onChanged: (val) =>
                             setState(() => _model.dropDownValue = val),
@@ -232,7 +217,7 @@ class _PaymentrequestWidgetState extends State<PaymentrequestWidget> {
                                   letterSpacing: 0.0,
                                 ),
                         hintText: FFLocalizations.of(context).getText(
-                          'cycyposm' /* Choose receival currency */,
+                          'cycyposm' /* What currency do you want to r... */,
                         ),
                         icon: Icon(
                           Icons.keyboard_arrow_down_rounded,
@@ -240,7 +225,7 @@ class _PaymentrequestWidgetState extends State<PaymentrequestWidget> {
                           size: 15.0,
                         ),
                         fillColor:
-                            FlutterFlowTheme.of(context).secondaryBackground,
+                            FlutterFlowTheme.of(context).primaryBackground,
                         elevation: 2.0,
                         borderColor: FlutterFlowTheme.of(context).alternate,
                         borderWidth: 2.0,
@@ -268,7 +253,7 @@ class _PaymentrequestWidgetState extends State<PaymentrequestWidget> {
                                 letterSpacing: 0.0,
                               ),
                           hintText: FFLocalizations.of(context).getText(
-                            'r0qn2k6d' /* What is this for? */,
+                            't6kyspv1' /* What is this for? */,
                           ),
                           hintStyle: FlutterFlowTheme.of(context)
                               .bodyMedium
@@ -286,21 +271,24 @@ class _PaymentrequestWidgetState extends State<PaymentrequestWidget> {
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0x00000000),
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           errorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0x00000000),
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           focusedErrorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0x00000000),
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
@@ -349,7 +337,6 @@ class _PaymentrequestWidgetState extends State<PaymentrequestWidget> {
                                 ),
                             elevation: 3.0,
                             borderSide: BorderSide(
-                              color: Colors.transparent,
                               width: 1.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),

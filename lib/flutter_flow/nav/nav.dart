@@ -78,26 +78,25 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? RequestFundsWidget()
-          : HomePageAlt1CopyWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? TestWidget() : HomePageAlt1CopyWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? RequestFundsWidget()
+              ? TestWidget()
               : HomePageAlt1CopyWidget(),
-        ),
-        FFRoute(
-          name: 'requestFunds',
-          path: '/requestFunds',
-          builder: (context, params) => RequestFundsWidget(),
         ),
         FFRoute(
           name: 'homePage_alt_1Copy',
           path: '/homePageAlt1Copy',
           builder: (context, params) => HomePageAlt1CopyWidget(),
+        ),
+        FFRoute(
+          name: 'test',
+          path: '/test',
+          builder: (context, params) => TestWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
