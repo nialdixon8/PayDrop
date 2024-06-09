@@ -20,7 +20,7 @@ Welcome to Paydrop, your new international payment app! Paydrop leverages blockc
 
 ### Installation
 1. Clone the repository:
-```bash
+    ```bash
     git clone https://github.com/nialdixon8/PayDrop.git
     ```
 
