@@ -14,7 +14,8 @@ Welcome to Paydrop, your new international payment app! Paydrop leverages blockc
 ## Check out our Demo!
 
 POV sender: https://youtu.be/ZLq9yRNzR3E
-POV receiver: https://youtube.com/shorts/ZLq9yRNzR3E?feature=share
+
+POV receiver: https://www.youtube.com/shorts/ge9K_QdeHTM
 
 ## Getting Started
 
