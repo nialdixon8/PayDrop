@@ -1,0 +1,88 @@
+/* ConfirmPayment.css */
+
+.confirm-payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .confirm-payment-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .confirm-payment-box h1 {
+    margin-bottom: 1rem;
+    color: #ff6f61;
+  }
+  
+  .confirm-payment-box p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .payment-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .payment-method {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .payment-method.selected {
+    background-color: #ffe5e5;
+    border-color: #ff6f61;
+  }
+  
+  .payment-method .icon {
+    margin-right: 1rem;
+  }
+  
+  .payment-method span {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .confirm-payment-box button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .confirm-payment-box button:hover {
+    background-color: #ff4b47;
+  }
+  
+  .payment-status {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #007bff;
+  }
+  
