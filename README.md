@@ -11,6 +11,10 @@ Welcome to Paydrop, your new international payment app! Paydrop leverages blockc
 - **Currency Flexibility:** Recipients can choose to receive money in any currency or in XRP, or a combination of both.
 - **Additional Features:** Includes options for bill splitting and shared lists for managing group expenses.
 
+## Demo
+
+!![](git demo sender.gif)
+
 ## Getting Started
 
 ### Prerequisites
