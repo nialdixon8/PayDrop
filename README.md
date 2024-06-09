@@ -16,7 +16,7 @@ Welcome to Paydrop, your new international payment app! Paydrop leverages blockc
 ### Prerequisites
 - Node.js
 - npm (Node Package Manager)
-- Ripple API
+- flutter
 
 ### Installation
 1. Clone the repository:
@@ -41,8 +41,7 @@ Welcome to Paydrop, your new international payment app! Paydrop leverages blockc
     REACT_APP_WHATSAPP_API_KEY=your_whatsapp_api_key
     ```
 ### Running the Application
-1.
-2.
+1. flutter run
 
 ## License
 Copyright (c) 2024, Paydrop.
