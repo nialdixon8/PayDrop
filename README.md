@@ -13,7 +13,7 @@ Welcome to Paydrop, your new international payment app! Paydrop leverages blockc
 
 ## Demo
 
-![](git demo sender.gif)
+![Demo GIF](demo_sender.gif)
 
 ## Getting Started
 
