@@ -20,13 +20,19 @@ Welcome to Paydrop, your new international payment app! Paydrop leverages blockc
 
 ### Installation
 1. Clone the repository:
+```bash
     git clone https://github.com/nialdixon8/PayDrop.git
+    ```
 
-2. Navigate to the project directory:
+3. Navigate to the project directory:
+   ```bash
     cd PayDrop
+    ```
 
-3. Install the necessary dependencies:
+4. Install the necessary dependencies:
+    ```bash
     npm install
+    ```
 
 ### Configuration
 1. Create a `.env` file in the root directory and add your configuration variables:
